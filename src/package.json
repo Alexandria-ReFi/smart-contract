@@ -1,0 +1,28 @@
+{
+  "name": "alexandria",
+  "version": "1.0.0",
+  "description": "Alexandria library on Blockchain",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noah Naizir",
+  "license": "MIT",
+  "dependencies": {
+    "@onflow/fcl": "^1.13.5",
+    "axios": "^1.8.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.9",
+    "openai": "^4.86.1",
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

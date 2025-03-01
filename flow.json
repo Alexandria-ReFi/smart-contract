@@ -3,7 +3,7 @@
 		"Alexandria": {
 			"source": "contracts/Alexandria.cdc",
 			"aliases": {
-				"testnet": "262018356ee8cf79"
+				"testnet": "c4912c4dda53043a"
 			}
 		}
 	},
@@ -14,10 +14,6 @@
 		"testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
-		"testnet-alexandria": {
-			"address": "262018356ee8cf79",
-			"key": "7ef0ce1366a70f0ae0138cb3ed63881705a97ff0715a7c647c836dd9712b0af5"
-		},
 		"emulator-account": {
 			"address": "f8d6e0586b0a20c7",
 			"key": {
@@ -32,6 +28,24 @@
 		"emulator-bob": {
 			"address": "179b6b1cb6755e31",
 			"key": "1a05ba433be5af2988e814d1e4fa08f1574140e6cb5649a861cc6377718c51be"
+		},
+		"mainnet-biblio": {
+			"address": "ccd91e42ccfcb185",
+			"key": {
+				"type": "file",
+				"location": "mainnet-biblio.pkey"
+			}
+		},
+		"testnet-alexandria": {
+			"address": "262018356ee8cf79",
+			"key": "7ef0ce1366a70f0ae0138cb3ed63881705a97ff0715a7c647c836dd9712b0af5"
+		},
+		"testnet-biblio": {
+			"address": "c4912c4dda53043a",
+			"key": {
+				"type": "file",
+				"location": "Biblio.pkey"
+			}
 		}
 	},
 	"deployments": {
@@ -41,6 +55,16 @@
 			],
 			"emulator-alice": [],
 			"emulator-bob": []
+		},
+		"testnet": {
+			"testnet-biblio": [
+				"Alexandria"
+			]
+		},
+		"mainnet": {
+			"mainnet-biblio": [
+				"Alexandria"
+			]
 		}
 	}
 }

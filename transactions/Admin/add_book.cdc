@@ -8,7 +8,7 @@ transaction(
     summary: String
     ) {
     /// Reference to the withdrawer's collection
-    let AdminRef: &Alexandria.Admin
+    let AdminRef: &Alexandria.Admin 
 
     prepare (deployer: auth(BorrowValue) &Account) {
         // borrow a reference to the signer's NFT collection
