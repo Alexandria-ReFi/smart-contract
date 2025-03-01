@@ -109,6 +109,11 @@ contract Alexandria {
             // Send Karma and FlowToken to the Librarian's account
 
         }
+        // Get Chapter
+        access(all)
+        fun getChapter(chapterTitle: String): Chapter? {
+            return self.Chapters[chapterTitle]!
+        }
 /*      access(all)
         fun removeLastChapter(): Int {
             let chapter = self.Chapters.removeLast()
@@ -353,6 +358,13 @@ contract Alexandria {
         let identifier = "Alexandria_Library_".concat(Alexandria.account.address.toString()).concat("_".concat(bookTitle))
         let book = Alexandria.account.storage.borrow<&Alexandria.Book>(from: StoragePath(identifier: identifier)!)!
         return book
+    }
+    // Fetch a book's chapter
+    access(all)
+    fun getBookChapter(bookTitle: String, chapterTitle: String): Chapter? {
+        let identifier = "Alexandria_Library_".concat(Alexandria.account.address.toString()).concat("_".concat(bookTitle))
+        let book = Alexandria.account.storage.borrow<&Alexandria.Book>(from: StoragePath(identifier: identifier)!)!
+        return book.getChapter(chapterTitle: chapterTitle)
     }
     // Fetch all registered authors
     access(all)

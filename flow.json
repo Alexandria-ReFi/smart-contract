@@ -56,13 +56,13 @@
 			"emulator-alice": [],
 			"emulator-bob": []
 		},
-		"testnet": {
-			"testnet-biblio": [
+		"mainnet": {
+			"mainnet-biblio": [
 				"Alexandria"
 			]
 		},
-		"mainnet": {
-			"mainnet-biblio": [
+		"testnet": {
+			"testnet-biblio": [
 				"Alexandria"
 			]
 		}
